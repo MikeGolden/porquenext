@@ -34,7 +34,7 @@ export default async function RootLayout({
   );
 }
 
-export default function generateMetadata(): Promise<Metadata> {
+export default async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('site');
   const locale = getLocale();
   const title = t('title');
